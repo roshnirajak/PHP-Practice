@@ -16,32 +16,44 @@
             height: 100vh;
             font-size: 18px;
         }
+
         input {
             margin-bottom: 4px;
         }
+
         ::placeholder {
-            color:  rgb(187, 187, 187);
+            color: rgb(187, 187, 187);
         }
-        .register, .register a{
-            font-size:16px;
-            color:#fff;
+
+        .register,
+        .register a {
+            font-size: 16px;
+            color: #fff;
+        }
+        #error{
+            color:red;
+            font-weight:600;
+            font-size: 18px;
         }
     </style>
 </head>
 
 <body>
+    <script src="login_script.js"></script>
     <div class='container'>
         <div class='container-in'>
             <span class="login" align="center">LOGIN</span><br />
             <br />
-            <form action="homepage.php">
-            <input type="text" name="uname" id="uname" placeholder="Username"><br />
+            <form onsubmit="return login()" action="homepage.php">
+                <input type="text" name="uname" id="uname" placeholder="Username"><br />
 
-            <input type="password" name="pwd" id="pwd" placeholder="Password"><br />
-            <button type="submit">Submit</button><br>
-            <span class="register">-OR-<br><a href="registerpage.php">Register</a></span>
+                <input type="password" name="pwd" id="pwd" placeholder="Password"><br />
+                <span id="error"></span><br />
+                <button type="submit">Submit</button><br>
+                <span class="register">-OR-<br><a href="registerpage.php">Register</a></span>
             </form>
         </div>
     </div>
 </body>
+
 </html>
