@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'calli';
+    src: url('./assests/calli.ttf');
+}
+@font-face {
+    font-family: 'bare';
+    src: url('./assests/BarefoodSignBrush-VGdaV.ttf');
+}
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Calibri Light';
+
+}
+body{
+    background-color: #e8ad2e;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#navbar{
+    margin-top: 3px;
+}
+nav{  
+    margin-right:30%;
+    margin-left: 30%;
+    border:2.7px solid #efceaa
+}
+.nav-ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.nav-ul li{
+    padding:10px;
+}
+.nav-ul li a{
+    padding: 3px 10px 3px 10px;
+    text-decoration: none;
+    color: #ffff;
+    font-family: 'calli';
+    font-size: 22px;
+}
+.nav-ul li a:hover{
+    background-color: #efceaa5f;
+}
+.mid{
+    margin-top: 3px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./assests/mid2.png');
+    background-position: center 25%;
+    margin-left:30%;
+    margin-right:30%;
+    height:100vh;
+}
+.container{
+    /* position: absolute;
+    transform:translate(-50%,50%);
+    left:20%;
+    top:45%; */
+    position: relative;
+    top:40%;
+    left:10%;
+    background-color: #ffffff12;
+    backdrop-filter:blur(4px);
+    
+    
+    height:300px;
+    width:300px;
+}
+.container-in{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:19%;
+    top:5%;
+    color:#fff;
+    font-size: 19px;
+}
+.login{
+    font-family: 'bare';
+    font-size: 60px;
+}
+input{
+    padding:5px;
+    height:23px;
+    width:180px;
+    color:white;
+    font-size: 18px;
+    border:none;
+    background: rgba(255, 255, 255, 0.236); 
+}
+button[type=submit]{
+    margin-top: 8px;
+    padding:5px;
+    width:190px;
+    border:none;
+    background-color: #d0e5ed;
+    font-size: 18px;
+}
+@media screen and (max-width:440px){
+    nav{
+        margin-left:1%;
+        margin-right:1%;
+    }
+    .container{
+        background-color: transparent;
+        backdrop-filter: blur(0px);
+    }
+    .mid{
+        margin-top: 3px;
+        background-position: center 25%;
+        margin-left:0%;
+        margin-right:0%;
+    }
+}
