@@ -9,6 +9,7 @@
     <title>Login Page</title>
     <style>
         body {
+            background: #000;
             background-image: url('./assests/bg2.jpg');
             background-size: cover;
             background-position: center;
@@ -21,7 +22,7 @@
         ::placeholder {
             color:  rgb(187, 187, 187);
         }
-        .register a{
+        .register, .register a{
             font-size:16px;
             color:#fff;
         }
@@ -33,15 +34,14 @@
         <div class='container-in'>
             <span class="login" align="center">LOGIN</span><br />
             <br />
-            <form action="">
+            <form action="homepage.php">
             <input type="text" name="uname" id="uname" placeholder="Username"><br />
 
             <input type="password" name="pwd" id="pwd" placeholder="Password"><br />
-            <button type="submit">Submit</button>
-            <span class="register"><a href="homepage.php">Register</a></span>
+            <button type="submit">Submit</button><br>
+            <span class="register">-OR-<br><a href="registerpage.php">Register</a></span>
             </form>
         </div>
     </div>
 </body>
-
 </html>
