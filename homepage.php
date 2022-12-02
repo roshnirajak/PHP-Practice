@@ -11,11 +11,11 @@
 <body>
     <!-- <script>
         $(function () {
-            $('#navbar').load('nav.php');
+            $('.navbar').load('nav.php');
         });
     </script> -->
     
-    <div id='navbar'>
+    <div class='navbar'>
         <?php
             include("nav.php");
         ?>

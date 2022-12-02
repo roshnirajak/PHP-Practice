@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'calli';
-    src: url('./assests/calli.ttf');
+    src: url('./assets/calli.ttf');
 }
 @font-face {
     font-family: 'bare';
-    src: url('./assests/BarefoodSignBrush-VGdaV.ttf');
+    src: url('./assets/BarefoodSignBrush-VGdaV.ttf');
 }
 *{
     margin:0px;
@@ -17,7 +17,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
-#navbar{
+.navbar{
     margin-top: 3px;
 }
 nav{  
@@ -47,46 +47,59 @@ nav{
     margin-top: 3px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('./assests/mid2.png');
+    background-image: url('./assets/mid2.png');
     background-position: center 25%;
     margin-left:30%;
     margin-right:30%;
     height:100vh;
 }
-.container{
-    position: relative;
-    top:40%;
-    left:10%;
-    background-color: #ffffff12;
-    backdrop-filter:blur(4px);
-    height:300px;
-    width:300px;
+.container {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.container-in{
+
+.container-in {
+    height: 520px;
+    width: 340px;
     text-align: center;
-    color:#fff;
-    font-size: 19px;
+    background-color: #000;
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(0 0 0 / 89%) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 25px;
 }
-.login{
+.h1 {
+    height: 130px;
+    background-size: cover;
+    background-position: center 30%;
+    border-radius: 25px 25px 0 0;
+    padding-top: 25px;
+}
+
+.h1 a{
+    padding-top: 30px;
     font-family: 'bare';
-    font-size: 60px;
+    font-size: 50px;
+    color: #fff;
 }
 input{
     padding:5px;
     height:23px;
     width:250px;
     color:white;
-    font-size: 18px;
+    /* font-size: 18px; */
     border:none;
     background: rgba(255, 255, 255, 0.236); 
 }
-button[type=submit]{
+
+button, input[type=reset]{
     margin-top: 8px;
     margin-bottom: 5px;
     padding:5px;
-    width:260px;
+    height:35px;
+    width:120px;
     border:none;
-    background-color: #d0e5ed;
     font-size: 18px;
 }
 @media screen and (max-width:440px){

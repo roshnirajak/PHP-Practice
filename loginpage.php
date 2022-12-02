@@ -9,16 +9,30 @@
     <title>Login Page</title>
     <style>
         body {
-            background: #000;
-            background-image: url('./assests/bg2.jpg');
-            background-size: cover;
-            background-position: center;
+            background: #fff;
             height: 100vh;
-            font-size: 18px;
+        }
+        nav{
+            border:none;
+        }
+        .nav-ul li a{
+            color:#538ea3;
+        }
+        .nav-ul li a:hover{
+            background-color: #538ea318;
+        }
+        .container-in {
+            height: 430px;
+            background-color:#10202a;
+        }
+        .h1 {
+            background-image: url('./assets/bg2.jpg');
+            background-position: bottom;
         }
 
         input {
             margin-bottom: 4px;
+            font-size: 15px;
         }
 
         ::placeholder {
@@ -30,19 +44,24 @@
             font-size: 16px;
             color: #fff;
         }
-        #error{
-            color:red;
-            font-weight:600;
-            font-size: 18px;
+
+        #error {
+            color: red;
+            font-weight: 600;
         }
     </style>
 </head>
 
 <body>
     <script src="login_script.js"></script>
+    <div class="navbar">
+        <?php
+        include('nav.php');
+        ?>
+    </div>
     <div class='container'>
         <div class='container-in'>
-            <span class="login" align="center">LOGIN</span><br />
+            <div class="h1" align="center"><a>LOGIN</a></div><br />
             <br />
             <form onsubmit="return login()" action="homepage.php">
                 <input type="text" name="uname" id="uname" placeholder="Username"><br />
