@@ -18,6 +18,11 @@
             src: url('./assets/BarefoodSignBrush-VGdaV.ttf');
         }
 
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
         body {
             background: #fff;
             height: 100vh
@@ -131,6 +136,7 @@
         #error {
             color: red;
             font-weight: 600;
+            font-family: 'Calibri';
             text-align: center;
         }
 
